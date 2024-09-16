@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pompiere', cursiva;
+}
+
+.container{
+    padding: 30px;
+    
+
+}
+
+.table{
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+table {
+    border: 1px  rgb(255, 255, 255);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    border: 1px solid ;
+    height: 40px;
+    font-size: 1.0em;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    background-color: #b20117;
+    color: #fff;
+}
+
+td {
+    border-right: 1px solid #b20117;
+    border-left: 1px solid #b20117;
+    height: 35px;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+tr{
+    transition: all .1s ease;
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: #b9636d;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #e1e1e270;
+}
+
+tr:nth-child(even):hover {
+    background-color: #b9636d;
+    color: #fff;
+}
+
+.pincel{
+    padding: 3px;
+}
+
+.bi-pencil{
+    background-color: #cdcdce;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 3px;
+    border: 1px solid  #cdcdce;
+    border-radius: 5px;
+
+}
+
+.bi-pencil:hover{
+    background-color: #b9636d;
+    color: #fff;
+}
+
+.lixo{
+    padding: 3px;
+}
+
+.bi-trash-fill{
+    background-color: #cdcdce;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 3px;
+    border: 1px solid #cdcdce;
+    border-radius: 5px;
+
+}
+
+.bi-trash-fill:hover{
+    background-color: #b9636d;
+    color: #fff;
+}

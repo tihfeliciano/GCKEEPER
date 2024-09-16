@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    width:60%;
+    height:60%;
+    position:absolute;
+    top:16%;
+    left:21%;
+    object-fit: fill;
+    display: flex;
+    filter: brightness(87%);
+}

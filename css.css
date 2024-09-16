@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');	
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto&display=swap');
+
+*{
+	 margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}		
+
+
+/*---------------------------------------------------------MENU------------------------------------------------------------------------->*/	
+
+body{
+    display: flex;
+    height: 100vh; /*medida da viewport - independente de qual será o tamanho da nossa div, a imagem ocupará toda a nossa tela*/
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    max-width: 150vh;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color:  #fff9f9;
+    box-shadow: 0px 0px 9px 0px #000000b5;
+}
+
+.container .titulo{
+    font-weight: 500;
+    position: relative;
+    border-radius: 0px;
+    border: 0px solid #00000013;
+    padding-left: 30px;
+    font-size: 26px;
+    border-bottom-width: 1px ;
+    transition: all 0.2s ease;
+    
+}
+
+.container .titulo::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .user-details .imput-box{
+    margin: 10px 0 5px 0;
+    width: calc(100% / 3 - 2px);
+    padding-left: 20px;
+}
+
+.user-details .imput-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-left: 3px;
+}
+
+.user-details .imput-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    background-color: #cdcdce;
+    border: 1px solid #00000036;
+    padding-left: 19px;
+    font-size: 16px; 
+    transition: all 0.2s ease;
+}
+
+.user-details .imput-box input:focus{
+    border-color: #00000036;
+    background-color: #6b8bb875;
+}
+
+.user-details .imput-box input:valid{
+    border-color: #00000036;
+   
+}
+
+form .button{
+    height: 45px;
+    width:80%;
+    margin: 22px auto 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+form .button input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    color: #ffffff;
+    font-weight: 500;
+    border:none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background-color: #577fb8; 
+}
+
+form .button input:hover{
+    color: #ffffff;
+    background-color: #8ab3cf;
+}
+
+
+@media (max-width: 785px){
+    .container{
+        max-width: 100%;
+    }
+    form select {
+        margin: 0px auto 0px auto;
+        margin-left: 20px;
+        margin-top: -10px;
+        margin-right: 50px;
+        width: 43%;
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    
+    form .user-details .imput-box{
+        margin-bottom: 15px;
+        width:100%
+    }
+
+    .container form .user-details{
+        max-height: 500px;
+        overflow-y: scroll; /*fazer tela rolar,quando a tela está dividida*/
+    }
+
+}
+/*-------------------------cadastro--------------------------------------------------*/
+#center{
+	width:100%;
+	height:69px;
+	background-color:rgba(255, 255, 255, 0.966);      
+	z-index: 2;
+	position: fixed;
+	right: 0%;
+	top:0%;
+	box-shadow: -4px 1px 7px 0px #000000b5;
+}
+
+.logo img{
+	width:20%;
+	height:95px;
+    position: fixed;
+	top:-2%;
+	left:6%;
+	object-fit: contain;
+	z-index: 2;
+}
+	
+#menu{
+	width:25%;
+	height:40px;  
+	position: fixed;
+	top:0%;
+	left:56%;
+	z-index: 2;
+}
+
+.menu{
+    text-align: center;
+    font-size: 1.2em;
+	font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.04rem;
+    padding-top: 20px;
+	width: 100%;
+}
+
+.menu li {
+    display: inline;
+    padding-right: 40px;
+}
+
+li a {
+    padding: 5px 10px; 
+    margin:0;
+	border: 1px rgba(255, 255, 255, 0.966) solid;
+	background: #9ebccf00;
+	text-decoration: none;
+	color: #7cadce;
+    text-decoration: none;
+    border-radius:15px;
+}
+
+li a:hover {
+    background:#8ab3cf52;
+	color:  #4180ab;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+#login{
+	width:18%;
+	height:4px;
+	position:fixed;
+	top:1%;
+	left:84%;	
+	z-index: 2;
+}
+
+.login{
+	text-align: center;
+    font-size: 2.8em;
+	font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.06rem;
+	font-size:20px;
+    padding-top: 12px;
+	width: 100%;
+    
+}
+
+.login  a{
+    display: inline;
+    padding-right: 50px;
+}
+
+.login a{
+	padding: 8px 15px; 
+	margin:0;
+	background: #4180ab ;
+	text-decoration: none;
+	color: #ffff;
+	border-radius:17px;
+}
+
+.login a:hover {
+	background:  #8ab3cf;
+	color:  #4180ab ;
+}
+
+/****************************************** MENU *****************************************************************************************/			
+
+.img img{
+	width: 78.99em;;
+	height:590px;
+	object-fit: fill;
+	position: relative;
+    filter: brightness(60%);
+}
+
+#main-banner {
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+#main-banner-content {
+    height: 150px;
+    width: 35%;
+    float: right;
+    margin: 300px 100px ;
+    position: absolute;
+}
+
+#main-banner-content2 {
+    height: 150px;
+    width: 35%;
+    float: left;
+    margin: 300px 700px ;
+    position: relative;
+}
+     
+        .abrir_clinica {
+            display: inline-block;
+            height: 45px;
+            width: 210px;
+            margin: 1px 115px;
+            border: 2px solid; 
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1em;
+            color: #f0ebebf1;
+            font-family: 'Bebas Neue', cursive;
+            background-color: #f0ebeb62;;
+            -webkit-border-radius:7px;
+            -moz-border-radius:7px;
+            border-radius:7px; 
+        }
+        .abrir_clinica:hover {
+            color: #000000c5;
+            border-color:#f0ebebef;
+            background-color: #f0ebeb86;
+        }
+        .modal_clinica{
+            display: none;
+            background-color: rgba(200, 199, 199, 0.185);
+            width: 100vw;
+            height: 100vh;
+            animation: animate;
+            animation-duration: 1s;
+            position:fixed;
+            padding-top: 90px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .abrir_empresa {
+            display: inline-block;
+            height: 45px;
+            width: 210px;
+            margin: 1px 115px;
+            border: 2px solid; 
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1em;
+            color: #f0ebebf1;
+            font-family: 'Bebas Neue', cursive;
+            background-color: #f0ebeb62;;
+            -webkit-border-radius:7px;
+            -moz-border-radius:7px;
+            border-radius:7px; 
+        }
+        .abrir_empresa:hover {
+            color: #000000c5;
+            border-color:#f0ebebef;
+            background-color: #f0ebeb86;
+        }
+        .modal_empresa{
+            display: none;
+            background-color: rgba(200, 199, 199, 0.185);
+            width: 100vw;
+            height: 100vh;
+            animation: animate;
+            animation-duration: 1s;
+            position:fixed;
+            padding-top: 90px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        
+                        @keyframes animate{
+                            from {
+                                opacity: 0; 
+                                transform: translate3d(0, -60px, 0);
+                            }
+                            to {
+                                opacity: 1;
+                                transform: translate3d(0, 0, 0);
+                             }
+                        }  
+                        
+                        .modal{
+                            z-index:1;
+                            position: fixed;
+                            top:60px;
+                            
+                            padding:0;
+                            display: center;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            background-color: #0000003c;
+                            width: 100%;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: scale(1.1);
+                            transition: visibility 0.25s ease-in-out , opacity 0.25s ease-in-out, transform 0.25s ease-in-out;   
+                        }
+                        
+                        .modal-content{
+                            
+                            background-color: #676a6833;
+                            width: 100%;
+                            height: 3800px;
+                            padding: 17px 214px;    
+                            border-radius: 0.5rem;
+                        }
+                        .close-button{
+                           float: right;
+                           width: 24px;
+                           right: 10px;
+                           line-height: 24px;
+                           text-align: center;
+                           cursor: pointer;
+                           border-radius: 0.25rem;
+                           background-color: lightgray;
+                        }
+                        .close-button:hover{
+                            background-color: darkgray;
+                        }
+                        
+                        .show-modal{
+                            opacity: 1;
+                            visibility: visible;
+                            transform: scale(1.0);    
+                        }
+                        
+                        .modal2{
+                            z-index:1;
+                            position: fixed;
+                            top:75px;
+                            height: 100vh;
+                            padding:0;
+                            display: center;
+                            justify-content: center;
+                            align-items: center;
+                            height: 1000px;
+                            background-color: #0000003c;
+                            width: 100%;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: scale(1.1);
+                            transition: visibility 0.25s ease-in-out , opacity 0.25s ease-in-out, transform 0.25s ease-in-out;   
+                        }
+                        
+                        .modal-content2{
+                            
+                            background-color: #6a676733;
+                            width: 100%;
+                            padding: 6px 214px;    
+                            border-radius: 0.5rem;
+                        }
+                        .close-button2{
+                           float: right;
+                           width: 24px;
+                           right: 10px;
+                           line-height: 24px;
+                           text-align: center;
+                           cursor: pointer;
+                           border-radius: 0.25rem;
+                           background-color: lightgray;
+                        }
+                        .close-button2:hover{
+                            background-color: darkgray;
+                        }
+                        
+                        .show-modal2{
+                            opacity: 1;
+                            visibility: visible;
+                            transform: scale(1.0);    
+                        }
+                        
+                /* Keyframes funciona da seguinte forma: "From"/De tal jeito   "to"/para outro jeito,
+                    como o exemplo esta de opacidade 0 para opacidade 1, o transform é um jeito de animação no caso
+                    este exemplo o modal esta mais alto e quando fizer o movimento ira descer.*/
+
+
+                    h1{
+                        text-align: center;
+                        font-family: 'Bebas Neue', cursive;
+                        letter-spacing: 0.06rem;
+                        color: #f0ebebef;      
+                        z-index: 0; 
+                        font-size: 2.3em;
+                    }
+                    
+                    h5{
+                        text-align: center;
+                        font-family: 'Bebas Neue', cursive;
+                        letter-spacing: 0.06rem;
+                        color: #f0ebebef;
+                        z-index: 0;
+                        font-size: 1em;
+                    }
+                    
+                    
+                    
+
+
+/*---------------------------------------------------------MENU------------------------------------------------------------------------->*/
+.meio{
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    margin-top: 1120px;
+    padding-left: 10px;
+    background-color: #ffffffb9;
+}
+
+.reta{
+    position: inherit;/* Defina as divs como elementos em linha */
+            width: 330px; /* Defina a largura de cada div */
+            height: 515px; /* Defina a altura de cada div */
+            background-color: #c0bfbfb9; /* Defina uma cor de fundo */
+            margin-top: 90px;
+            margin-right: 30px;
+             margin-left: 60px;
+             border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px #000000b5;
+}
+
+.reta2{
+    position:inherit;/* Defina as divs como elementos em linha */
+            width: 330px; /* Defina a largura de cada div */
+            height: 515px; /* Defina a altura de cada div */
+            background-color: #c0bfbfb9; /* Defina uma cor de fundo */
+            margin-top: 90px;
+            margin-right: 30px;
+             margin-left: 450px;
+             border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px #000000b5;
+             
+
+}
+
+.reta3{
+    position: inherit; /* Defina as divs como elementos em linha */
+            width: 330px; /* Defina a largura de cada div */
+            height: 515px; /* Defina a altura de cada div */
+            background-color: #c0bfbfb9; /* Defina uma cor de fundo */
+            margin: 90px;
+            margin-left: 850px;
+            margin-right: 0px;
+            border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px #000000b5;
+
+}
+
+.foto img{
+	display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 330px;
+            height: 330px;
+}
+
+h2{
+	text-align: center;
+	color: #000000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-size: 1.4em;
+    letter-spacing: 0.05rem;
+}
+
+h3{
+	text-align:justify;
+	font-family: 'Poppins', sans-serif;
+	color: #131313ef;
+    font-size: 1.1.8em;
+    letter-spacing: 0.05rem;
+}
+h4{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	color: #131313ef;
+    font-size: 0.9em;
+    letter-spacing: 0.05rem;
+}
+
+.fim{
+    width: 100%;
+    height: 440px;
+    position: absolute;
+    margin-top: 2420px;
+    padding-left: 10px;
+    background-color: #ffffffb9;
+}
+
+.text{
+    position: inherit;/* Defina as divs como elementos em linha */
+            width: 70%; /* Defina a largura de cada div */
+            height: 50%; /* Defina a altura de cada div */
+            background-color: #ffffff; /* Defina uma cor de fundo */
+            margin-top: 16px;
+            margin-left: 170px;
+            border-radius: 5px;
+            text-align: center;
+}
+
+/*---------------------------------------------------------RODAPÉ------------------------------------------------------------------------->*/
+
+footer {
+    width: 100%;
+    height: 25%;
+    padding: 50px;
+    position: absolute;
+    margin-top: 2990px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #272727b9;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.0em;
+    letter-spacing: 0.05rem;
+}
+
+.suporte{
+    width: 20%;
+    height: 74%;
+    position: absolute;
+    margin-top:0 ;
+    margin-left: 63%;
+    background-color: #f91a1a00;
+    
+}
+.sup{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top:0 ;
+    background-color: #5df91a00;
+    text-align: justify;
+    margin-left: 33%;
+    margin-top: 3%;
+	font-family: 'Poppins', sans-serif;
+    font-size: 1.0em;
+    letter-spacing: 0.05rem;
+}
+
+.su{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    margin-top:0px ;
+    background-color: #0d1dcf00;
+}
+
+.bi-whatsapp{
+    width: 27%;
+    height: 100%;
+    margin-left: 32%;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+.bi-envelope{
+    width: 27%;
+    height: 100%;
+    margin-left: 32%;
+    margin-top: -40px;
+    margin-bottom: -13px;
+}
+
+.bi-instagram{
+    width: 27%;
+    height: 100%;
+    margin-left: 32%;
+    margin-top: -60px;
+    margin-bottom: -13px;
+}
+.bi-facebook{
+    width: 27%;
+    height: 100%;
+    margin-left: 32%;
+    margin-top: -80px;
+    margin-bottom: -13px;
+}
+
+/*---------------------------------------------------------RODAPÉ------------------------------------------------------------------------->*/
+
+@media (max-width: 785px){
+	.logo img{
+		width: 22%;
+		left: 0%;
+	}
+    #menu{
+		width: 35%;
+		left: 19%;
+
+	}
+	.menu li{
+		padding-right: 1px;
+	}
+	li a{
+        max-width: 8%;
+		padding: 3px 7px;
+		font-size:11px;
+		left: 10px;
+    }
+	#paciente {
+		width: 40%;
+		height: 2px;
+		left: 46%;
+	}
+	.paciente a{
+		font-size:14px;
+		padding: 6px 7px; 
+	}
+	.login a{
+		font-size:14px;
+		padding: 6px 7px; 
+	}
+	
+	#login{
+		max-width: 12%;
+		height: 2px;
+		left: 80%;
+	}
+	.clinica{
+		font-size:14px;
+	}
+	.solicite{
+		top:-86px;
+		font-size:14px;
+	}
+	#soci{
+		top:2280px;
+	}
+	header,footer {
+		width: 100%;
+		padding: 10px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #c0bfbfb9;
+		color: #ffffff;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    
+    form .user-details .imput-box{
+        margin-bottom: 15px;
+        width:100%
+    }
+
+    .container form .user-details{
+        max-height: 500px;
+        overflow-y: scroll; /*fazer tela rolar,quando a tela está dividida*/
+    }
+}

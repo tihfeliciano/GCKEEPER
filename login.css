@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sem serifa;
+}
+
+body{
+    display: flex;
+    height: 100vh; /*medida da viewport - independente de qual será o tamanho da nossa div, a imagem ocupará toda a nossa tela*/
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #7797c4bb;
+}
+
+.balao{
+    max-width: 1050px;
+    width: 96%;
+    padding: 30px  40px;
+    padding-left: 0;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px #000000b5;
+}
+
+.logo img{
+	width: 45%;
+	height:70%;
+    padding-bottom: -35px;
+    float:left;
+	object-fit: fill;
+    filter: brightness(87%);
+	position: absolute
+}
+
+.container{
+    max-width: 600px;
+    width: 40%;
+    padding: 20px 28px;
+    padding-bottom: 5px;
+    border-radius: 45px;
+    float:right;
+    border: solid 1px #000000;
+    background-color: #e1e1e1;
+    
+}
+
+.container .titulo{
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    border-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    letter-spacing: 0.04rem;
+    border-bottom-width: 1px ;
+    transition: all 0.7s ease;
+    
+}
+
+.container .titulo::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container form select{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cadastro form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .user-details .imput-box{
+    margin: 3px auto 2px auto;
+    width: 80%;
+    padding: 5px 0;
+}
+
+form select {
+    margin: -10px auto 3px auto;
+    width: 80%;
+    padding: 5px 0;
+}
+
+.user-details .imput-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 2px;
+    padding-left: 13px;
+}
+
+.user-details .imput-box input{
+    height: 37px;
+    width: 100%;
+    outline: none;
+    background-color: #cdcdce;
+    border: 1px solid #00000036;
+    padding-left: 14px;
+    font-size: 16px;
+    border-radius:10px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-details .imput-box input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.user-details .imput-box input:valid{
+    color: #000000;
+    background: #bdd1de;;
+}
+
+select{
+    height: 37px;
+    width: 100%;
+    outline: none;
+    background-color: #cdcdce;
+    border: 1px solid #00000036;
+    padding-left: 14px;
+    padding-top: 1px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.04rem;
+    border-radius:10px; 
+    transition: all 0.8s ease;
+}
+
+form .button{
+    height:45px;
+    width:72%;
+    margin: 12px auto 0 auto;
+    padding-left: 5px;
+    padding-top: -10px;
+}
+
+form .button input{
+    height: 37px;
+    width: 100%;
+    outline: none;
+    color: #ffffff;
+    font-weight: 500;
+    border:none;
+    border-radius:35px; 
+    letter-spacing: 0.04rem;
+    background-color: #577fb8;
+    transition: all 0.2s ease; 
+}
+
+form .button input:hover{
+    color: #ffffff;
+    background-color: #8ab3cf;
+}
+
+.olho{
+    width: 30px;
+    height: 30px;
+    padding-left: 240px;
+    margin-top: -30px;
+}
+
+.bi-eye{
+    width: 23px;
+    height: 23px;
+    left: 100px;
+}
+h5{
+    font-size: 14px;
+    padding-left: 37px;
+    padding-top: -100px;
+}

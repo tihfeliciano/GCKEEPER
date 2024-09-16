@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pompiere', cursiva;
+}
+
+.container{
+    max-width: 900px;
+    width:36vh;
+    height:98%;
+    background-color: #577fb8;
+    box-shadow: 2px -2px 8px 1px #000000b5;
+    padding: 5px;
+    position:absolute;
+    border: 1px solid #b20116b0;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius:  0px;
+    border-bottom-right-radius:  0px;
+    border-left: 0px;
+
+}
+
+.menu{
+    text-align:inherit;
+    font-size:19px;
+    margin: 13vh auto 0 auto;
+    border: 0px solid;
+    padding: 10px;  
+    width: 100%;
+}
+
+.menu li {
+    display: inline;
+    padding-right: 0px;
+}
+
+li a {
+    padding: 4px ; 
+    margin:4px;
+    border: 1px solid ; 
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 1.3em;
+    letter-spacing: 0.04rem;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+#passar_mouse{
+    color:#ffffff;
+    line-height: 22px;/*espaçamento entre linhas*/
+    padding-top: 2px;
+    font-size: 1.3em;
+    letter-spacing: 0.01rem; 
+    margin:2px;
+    border: 0px solid; 
+    text-decoration: none;
+}
+
+#mostrar{
+    display: none;
+}
+  
+#passar_mouse:hover #mostrar{
+    display:block;
+    letter-spacing:normal;
+}
+
+li a {
+    line-height: 22px;/*espaçamento entre linhas*/
+    padding-top: 2px;
+    font-size: 19px;
+    padding: 4px ; 
+    margin:4px;
+    border: 0px solid; 
+    text-decoration: none;
+    color:#ffffff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+    
+li a:hover {
+    color: #b20116c7;
+    border-color: #000;
+}
+
+iframe {
+    position: absolute;
+    margin: 0;
+    width: 1064.4px;
+    height: 567px;
+    left: 13.2em;
+}
+
+
+
+
